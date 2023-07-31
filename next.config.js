@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+// const nextConfig = {}
 
 module.exports = {
-    nextConfig, typescript: { ignoreBuildErrors: true }, images: {
+    images: {
         domains: ['upload.wikimedia.org'],
     },
 }

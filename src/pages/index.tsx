@@ -1,6 +1,5 @@
 import Home from "./home/Home";
 import Layout from "./layout/Layout";
-import "@/assets/globals.css"
 
 export default function Page() {
   return (
