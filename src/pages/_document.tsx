@@ -1,12 +1,5 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
-
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      Html: React.DetailedHTMLProps<React.HtmlHTMLAttributes<HTMLHtmlElement>, HTMLHtmlElement>;
-    }
-  }
-}
+// pages/_document.js
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: any) {

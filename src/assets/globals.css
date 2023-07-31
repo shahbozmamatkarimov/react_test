@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Syriac+Eastern:wght@600&family=Playfair+Display&family=Public+Sans:wght@600&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Sans Syriac Eastern', sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-family: 'Public Sans', sans-serif;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+/* home ----------------------- */
+.homeImage {
+  height: 64vh;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  background: grey;
+  top: 0;
+  z-index: -1;
+}
+
+.homePage {
+  position: relative;
+  min-height: 93vh;
+}
+
+.searchButton h1 {
+  min-width: 50rem;
+  font-size: 40px;
+  padding-left: 5rem;
+  color: white;
+  padding-bottom: 30px;
+}
+
+.searchButton h1 span {
+  color: #04DA8D;
+}
+
+.searchButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: bold;
+  height: 60vh;
+  margin-left: 10rem;
+  min-width: 40rem;
+  max-width: 40rem;
+  border-radius: 100px;
+}
+
+.searchButton TextField {
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+* {
+  border: none !important;
+}

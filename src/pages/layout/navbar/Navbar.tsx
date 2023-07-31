@@ -1,4 +1,5 @@
 import { NavbarLink } from "../../../constants/navbar";
+import Image from 'next/image';
 
 // MUI
 import * as React from "react";
@@ -59,7 +60,16 @@ export default function Navbar(props: Props) {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar component="nav" sx={{ bgcolor: '#1C1C1C', height: '70px', paddingY: '5px', mx: 'auto', px: {lg: '10rem', md:'5rem'}}}>
+      <AppBar
+        component="nav"
+        sx={{
+          bgcolor: "#1C1C1C",
+          height: "70px",
+          paddingY: "5px",
+          mx: "auto",
+          px: { lg: "10rem", md: "5rem" },
+        }}
+      >
         <Toolbar>
           <IconButton
             color="inherit"
@@ -75,7 +85,13 @@ export default function Navbar(props: Props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
           >
-            <img className="img" src="https://upload.wikimedia.org/wikipedia/commons/6/60/Logo-logosu.png" alt="img" />
+            <Image
+              className="img"
+              src="https://upload.wikimedia.org/wikipedia/commons/6/60/Logo-logosu.png"
+              alt="img"
+              width={100}
+              height={30}
+            />
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {NavbarLink.map((item) => (
@@ -90,10 +106,15 @@ export default function Navbar(props: Props) {
               sx={{
                 color: "#000",
                 bgcolor: "#A6C0F0",
+                "&:hover": {
+                  bgcolor: "blue",
+                  color: "#fff",
+                },
                 borderRadius: "100px",
                 paddingX: "20px",
                 fontWeight: "bold",
                 textTransform: "capitalize",
+
                 marginLeft: "20px",
               }}
             >
