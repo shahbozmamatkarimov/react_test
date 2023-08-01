@@ -66,7 +66,7 @@ const topFilms = [
   { title: "Interstellar", year: 2014 },
 ];
 
-export default function SearchButton() {
+export default function Search() {
   const [open, setOpen] = React.useState(false);
   const [options, setOptions] = React.useState<readonly Film[]>([]);
   const loading = open && options.length === 0;
