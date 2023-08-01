@@ -2,7 +2,6 @@ import Image from "next/image";
 import Cards from "@/components/Card";
 import SearchButton from "@/components/SearchButton";
 import UserCard from "@/components/UserCard";
-
 export default function Home() {
   return (
     <div className="homePage">
