@@ -6,6 +6,7 @@ import CardContent from "@mui/joy/CardContent";
 import Chip from "@mui/joy/Chip";
 import Typography from "@mui/joy/Typography";
 import { category } from "../utils/data";
+import Image from "next/image";
 
 export default function Cards() {
   return (
@@ -27,8 +28,9 @@ export default function Cards() {
               },
             }}
           >
-            <AspectRatio ratio="1" sx={{ width: 40 }}>
-              <img src={category.url} alt="img" />
+            <AspectRatio ratio="1" sx={{ width: 40, bgcolor: '#fff' }}>
+              <Image src={category.url} height={1} width={1} alt="img" />
+
             </AspectRatio>
             <CardContent>
               <Typography
@@ -62,7 +64,7 @@ export default function Cards() {
             }}
           >
             <AspectRatio ratio="1" sx={{ width: 40 }}>
-              <img src={category.url} alt="img" />
+              <Image src={category.url} height={10} width={10} alt="img" />
             </AspectRatio>
             <CardContent>
               <Typography

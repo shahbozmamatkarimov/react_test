@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Cards from "../../components/Card";
 import Carousel from "../../components/Carousel";
 import SearchButton from "../../components/SearchButton";
@@ -7,7 +8,7 @@ export default function Home() {
   return (
     <div className="homePage">
       {/* <Carousel /> */}
-      <img className="homeImage" src="https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60" alt="img" />
+      <Image className="homeImage" src="https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60" height={100} width={100} alt="img" />
       <div>
         <SearchButton />
       </div>

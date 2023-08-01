@@ -9,6 +9,7 @@ import CardActions from "@mui/joy/CardActions";
 import IconButton from "@mui/joy/IconButton";
 import Typography from "@mui/joy/Typography";
 import FavoriteBorder from "@mui/icons-material/FavoriteBorder";
+import Image from "next/image";
 
 export default function UserCard() {
   const cards = [1, 2, 3, 4, 5, 6, 7, 8];
@@ -40,7 +41,12 @@ export default function UserCard() {
               sx={{ "--Avatar-size": "36px", mr: "10px" }}
             />
             <AvatarGroup size="sm" sx={{ height: "30px" }}>
-              <img src="https://cdn.trustpilot.net/brand-assets/4.1.0/stars/stars-5.svg" />
+              <Image
+                src="https://cdn.trustpilot.net/brand-assets/4.1.0/stars/stars-5.svg"
+                height={30}
+                width={120}
+                alt="img"
+              />
             </AvatarGroup>
           </Box>
           <CardContent>
