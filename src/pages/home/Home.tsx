@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Cards from "../../components/Card";
-import Carousel from "../../components/Carousel";
 import SearchButton from "../../components/SearchButton";
 import UserCard from "../../components/UserCard";
 
