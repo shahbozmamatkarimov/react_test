@@ -2,6 +2,7 @@ import * as React from "react";
 import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
 import CircularProgress from "@mui/material/CircularProgress";
+import "../styles/page.module.css"
 
 interface Film {
   title: string;
@@ -50,7 +51,7 @@ export default function SearchButton() {
       <h1>Read reviews. Write reviews. Find companies you can <span>trust.</span></h1>
       <Autocomplete
         id="asynchronous-demo"
-        sx={{ width: "100%", mx: "auto" }}
+        sx={{ width: "100%", mx: "auto", borderRadius: '2rem', overflow: "hidden" }}
         open={open}
         onOpen={() => {
           setOpen(true);

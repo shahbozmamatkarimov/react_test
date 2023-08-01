@@ -56,10 +56,11 @@ body {
   justify-content: center;
   align-items: center;
   font-size: bold;
-  height: 60vh;
+  height: 64vh;
   margin-left: 10rem;
   min-width: 40rem;
   max-width: 40rem;
+  color: rgba(128, 128, 128, 0.179);
   border-radius: 100px;
 }
 
@@ -68,6 +69,62 @@ body {
   overflow: hidden;
 }
 
-* {
-  border: none !important;
+.grid {
+  display: grid;
+  padding: 0 10rem 4rem;
 }
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+::-webkit-scrollbar{
+  height: 0;
+  width: 0;
+}
+
+.flex {
+  display: flex;
+  width: 200vw;
+  gap: 10px;
+  overflow-x: scroll;
+  max-width: 100vw;
+}
+
+.py{
+  padding: 1rem 10rem;
+}
+
+.flex .card {
+  min-width: 100vw;
+}
+
+.comment h3{
+  padding: 0.9rem;
+  background: rgba(128, 128, 128, 0.093);
+  text-align: center;
+}
+
+.comment h2 {
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.comment button:hover {
+  background: #C2D5F7;
+  color: #000;
+}
+
+.comment button {
+  background: rgba(0, 0, 255, 0.703);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 50px;
+}
+
+/* * {
+  border: none !important;
+} */
